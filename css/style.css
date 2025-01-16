@@ -1,0 +1,656 @@
+/* initial padding, margin, 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* navbar area START */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: #FFFFFF;
+}
+
+.navItems {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.navAction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profilePic img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.loginBtn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #F1654C;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loginBtn:hover {
+    background-color: #f72500e4;
+}
+
+.navItemsSymbolColor {
+    color: #D6DAE1;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navLogoColor {
+    color: #F1654C;
+}
+
+.navLogoColor1 {
+    color: #333;
+}
+
+.nav-items {
+    color: #445164;
+}
+
+/* navbar area END */
+
+
+/* hero section area START*/
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #F5F6F7 !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.design-hero-img {
+    width: 400px;
+    height: 400px;
+    top: 177px;
+    left: 1042px;
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 10px;
+}
+
+.cta-button {
+    padding: 15px 25px;
+    background-color: #F1654C;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.cta-button1 {
+    padding: 15px 15px;
+    background-color: rgba(234, 236, 240, 1);
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 10px;
+    /* border: none; */
+}
+
+.hero-text {
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hero-content {
+    color: #445164;
+}
+
+/* hero section area END*/
+
+/* section ClanBook area START*/
+.ClanBook {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1040px;
+    align-items: center;
+    gap: 40px;
+}
+
+.ClanBookImg {
+    width: 400px;
+    height: 400px;
+    top: 1119px;
+    left: 300px;
+    border-radius: 20px;
+}
+
+.ClanBookContent {
+    line-height: 20px;
+    color: #445164;
+}
+
+.ClanBookTitle1 {
+    color: #F1654C;
+}
+
+.ClanBookTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ClanBookParagraph {
+    text-align: center;
+    color: #445164;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+/* section ClanBook area END*/
+
+/* join area START*/
+.bg-card-content {
+    box-shadow: 4px 4px 8px gray;
+    padding: 30px;
+}
+
+.bg-cart-title {
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.bg-card-area {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 980px;
+    border-radius: 10px;
+}
+
+.bg-area {
+    background-color: #F1654C !important;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bg-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.join-area-p-tag {
+    text-align: center;
+    color: rgba(68, 81, 100, 1);
+}
+
+.cta-button-center {
+    text-align: center;
+}
+
+/* join area END */
+
+/* social media area START*/
+.clanbooker-color {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.clanbooker-p {
+    text-align: center;
+}
+
+.whatsapp-color {
+    color: rgba(46, 184, 65, 1);
+}
+
+.instagram-color {
+    color: rgba(66, 103, 201, 1);
+}
+
+.messenger-color {
+    color: rgba(15, 143, 255, 1);
+}
+
+.snapchat-color {
+    color: rgba(27, 37, 51, 1);
+}
+
+.viber-color {
+    color: rgba(123, 81, 156, 1);
+}
+
+.telegram-color {
+    color: rgba(31, 150, 212, 1);
+}
+
+.wclam-color {
+    color: rgba(0, 200, 14, 1);
+}
+
+.Kakaotalk-color {
+    color: rgba(0, 0, 0, 1);
+}
+
+.line-color {
+    color: rgba(6, 199, 85, 1);
+}
+
+.sms-color {
+    color: rgba(27, 37, 51, 1);
+}
+
+.media-card img {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 10px;
+}
+
+.media-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(249, 250, 252, 1);
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 25px;
+    margin: 0 auto;
+    max-width: 980px;
+}
+
+/* social media area END*/
+
+/* Our Clan Booker offer area START */
+small {
+    color: rgba(68, 81, 100, 1);
+}
+
+.our-clan {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.booker-offer {
+    color: #e4492d;
+}
+
+.our-clan-p-tag {
+    text-align: center;
+}
+
+.wright-symbol {
+    color: rgba(241, 101, 76, 1);
+}
+
+.gift-card-color {
+    color: #e4492d;
+}
+
+.price-left-50 {
+    padding-left: 30px;
+}
+
+.sercial-wright-symbol {
+    background-color: white;
+    color: #e4492d;
+    padding: 2px;
+    border-radius: 3rem;
+}
+
+.ebook {
+    color: #e4492d;
+}
+
+.clanbook {
+    color: #e4492d;
+}
+
+
+.price-text-small {
+    font-size: 13px;
+    font-weight: normal;
+    color: rgba(27, 37, 51, 1);
+}
+
+.price-left {
+    padding-left: 100px;
+}
+
+.our-main-bg {
+    background-color: rgba(245, 246, 247, 1);
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.our-clan-main {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 1020px;
+    padding: 30px;
+}
+
+.our-clan-card1 {
+    background-color: rgba(255, 255, 255, 1);
+    width: 450px;
+    height: 420px;
+    top: 3323px;
+    left: 300px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 45px;
+    line-height: 35px;
+}
+
+.our-clan-card1 ul li {
+    list-style: none;
+}
+
+.our-clan-card2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-clan-parent {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    display: flex;
+    padding: 28px;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.our-clan-parent img.card-image {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 10px;
+}
+
+.our-clan-parent h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.our-clan-parent p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+/* Our Clan Booker offer area END */
+
+/* Let’s read ClanBookers area strat */
+
+.lets-read {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.comunity-say-color {
+    color: #e4492d;
+}
+
+.comunity-say-color-footballer {
+    color: yellowgreen;
+}
+
+.comunity-say-color-footballer2 {
+    color: hotpink;
+}
+
+.comunity-say-color1 {
+    color: rgba(68, 81, 100, 1);
+}
+
+.review-flex {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.review-text-top {
+    padding-top: 8px;
+}
+
+.next-previous {
+    margin: 0 auto;
+    max-width: 965px;
+    gap: 40px;
+    display: flex;
+}
+
+.next-previous-card {
+    background-color: rgba(245, 246, 247, 1);
+    width: 320px;
+    height: 310px;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.man-profile-img {
+    width: 60px;
+    height: 60px;
+    background-color: #F1654C;
+    border-radius: 2rem;
+}
+
+.button-center {
+    text-align: center;
+}
+
+.lets-p {
+    text-align: center;
+}
+
+.review-content {
+    line-height: 22px;
+}
+
+/* Let’s read ClanBookers area END */
+
+/* footer area START */
+
+.footer-clan-book {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.footer-bg-color {
+    background-color: rgba(245, 246, 247, 1);
+    padding-top: 50px;
+}
+
+.clan-footer-color {
+    color: #e4492d;
+}
+
+.oo-footer-color {
+    color: #e4492d;
+}
+
+.footer-message-i-tag {
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.footer-message-i-tag i {
+    color: #e4492d;
+}
+
+.footer-subscribe-color {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.footer-small-subscribe {
+    color: rgba(234, 236, 240, 1);
+}
+
+.input-tag-left {
+    padding-left: 160px;
+}
+
+.footer-input-card {
+    padding: 11px;
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 10px;
+}
+
+.footer-input-tag {
+    border: none;
+    outline: none;
+    background-color: rgba(234, 236, 240, 1);
+    padding: 14px;
+}
+
+.footer-text {
+    background-color: #e4492d;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.footer-text-color {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-text-color a {
+    text-decoration: none;
+}
+
+.subscribe {
+    display: flex;
+    gap: 20px;
+    background-color: #F1654C;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 960px;
+    align-items: center;
+}
+
+.list-row-items {
+    display: flex;
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 940px;
+    line-height: 27px;
+}
+
+.list-row-items li {
+    list-style: none;
+}
+
+.social-media-icon {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.social-media-icon-card {
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.social-media-icon-card i {
+    color: #F1654C;
+}
+
+
+.social-media-icon-card-twitter {
+    background-color: #F1654C;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.social-media-icon-card-twitter a {
+    color: rgba(234, 236, 240, 1);
+}
+
+.my-name-color {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.footer-li li {
+    color: rgba(68, 81, 100, 1);
+}
+
+.footer-titles {
+    color: rgba(27, 37, 51, 1);
+}
+
+/* footer area END */
