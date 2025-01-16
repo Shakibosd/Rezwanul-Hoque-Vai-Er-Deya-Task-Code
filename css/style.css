@@ -107,8 +107,8 @@ body {
 }
 
 .design-hero-img {
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     top: 177px;
     left: 1042px;
     background-color: rgba(234, 236, 240, 1);
@@ -154,15 +154,15 @@ body {
 }
 
 .ClanBookImg {
-    width: 400px;
-    height: 400px;
+    width: 430px;
+    height: 430px;
     top: 1119px;
     left: 300px;
     border-radius: 20px;
 }
 
 .ClanBookContent {
-    line-height: 20px;
+    line-height: 17px;
     color: #445164;
 }
 
@@ -635,7 +635,7 @@ small {
     padding: 5px 10px;
 }
 
-.social-media-icon-card-twitter a {
+.social-media-icon-card-twitter i {
     color: rgba(234, 236, 240, 1);
 }
 
