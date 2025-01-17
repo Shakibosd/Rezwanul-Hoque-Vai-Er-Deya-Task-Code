@@ -7,58 +7,67 @@
 
 /* Fonts */
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
 /* navbar area START */
 .navbar {
-    display: flex;
-    justify-content: center;
-    gap: 135px;
-    align-items: center;
-    padding: 15px 25px;
+    padding: 1rem 2rem;
     background-color: #FFFFFF;
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .navItems {
     display: flex;
-    gap: 15px;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    color: rgba(68, 81, 100, 1);
+}
+
+.navItems li {
+    flex: 1 1 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navItems img {
+    color: rgba(214, 218, 225, 1);
+    font-size: 1.5rem;
 }
 
 .navAction {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.4rem;
 }
 
 .profilePic img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 10rem;
 }
 
 .loginBtn {
-    padding: 8px 16px;
+    padding: 0.8rem 1.1rem;
     border: none;
     background-color: #F1654C;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 0.4rem;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 .loginBtn:hover {
     background-color: #f72500e4;
 }
 
-.navItemsSymbolColor {
-    color: #D6DAE1;
-}
-
 .logo span {
-    font-size: 24px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -79,16 +88,15 @@ body {
 
 /* hero section area START*/
 .hero-section {
+    padding-top: 3rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 100px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: #F5F6F7 !important;
+    gap: 18rem;
+    align-items: center;
+    padding-bottom: 8rem;
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    background-color: #F5F6F7 !important;
 }
 
 .hero-section::before {
@@ -106,40 +114,58 @@ body {
     z-index: -1;
 }
 
-.design-hero-img {
-    width: 430px;
-    height: 430px;
-    top: 177px;
-    left: 1042px;
-    background-color: rgba(234, 236, 240, 1);
-    border-radius: 10px;
+.image-container {
+    position: relative;
+}
+
+.main-image img {
+    width: 18rem;
+    height: 25rem;
+    display: block;
+    border-radius: 0.4rem;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: -4.6875rem;
+    left: -10rem;
+    background-image: url('..//images/Group.png');
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+}
+
+.overlay-image img {
+    width: 12.5rem;
+    height: 15.625rem;
+    border-radius: 0.5rem;
 }
 
 .cta-button {
-    padding: 15px 25px;
+    padding: 1rem 2rem;
     background-color: #F1654C;
     color: white;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border: none;
 }
 
 .cta-button1 {
-    padding: 15px 15px;
+    padding: 1rem 2rem;
     background-color: rgba(234, 236, 240, 1);
-    border: 1px solid #ddd;
+    border: 0.02rem solid #ddd;
     color: black;
-    border-radius: 10px;
-    /* border: none; */
+    border-radius: 0.5rem;
 }
 
 .hero-text {
-    line-height: 45px;
     font-weight: bold;
-    font-size: 30px;
+    line-height: 3.3rem;
+    font-size: 2rem;
 }
 
 .hero-content {
     color: #445164;
+    font-size: 0.84rem;
+    line-height: 1.5rem;
 }
 
 /* hero section area END*/
@@ -147,23 +173,38 @@ body {
 /* section ClanBook area START*/
 .ClanBook {
     display: flex;
-    margin: 0 auto;
-    max-width: 1040px;
+    justify-content: center;
+    gap: 6rem;
     align-items: center;
-    gap: 40px;
 }
 
-.ClanBookImg {
-    width: 430px;
-    height: 430px;
-    top: 1119px;
-    left: 300px;
-    border-radius: 20px;
+.photo-frame {
+    position: relative;
+}
+
+.frame img {
+    width: 21rem;
+    height: 29rem;
+    border-radius: 0.5rem;
+}
+
+.frame1 {
+    position: absolute;
+    bottom: 19rem;
+    padding-left: 12.4rem;
+}
+
+.frame1 img {
+    width: 12rem;
+    height: 8rem;
+    border-radius: 0.4rem;
 }
 
 .ClanBookContent {
-    line-height: 17px;
+    line-height: 1.1rem;
     color: #445164;
+    font-size: 1rem;
+    padding-top: 1.8rem;
 }
 
 .ClanBookTitle1 {
@@ -192,28 +233,23 @@ h1 {
 /* section ClanBook area END*/
 
 /* join area START*/
-.bg-card-content {
-    box-shadow: 4px 4px 8px gray;
-    padding: 30px;
-}
-
 .bg-cart-title {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .bg-card-area {
     background-color: rgba(255, 255, 255, 1);
-    padding: 50px;
+    padding: 4.125rem;
     margin: 0 auto;
-    max-width: 980px;
-    border-radius: 10px;
+    max-width: 63.875rem;
+    border-radius: 0.625rem;
 }
 
 .bg-area {
     background-color: #F1654C !important;
-    padding: 50px;
+    padding: 4rem;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -236,6 +272,7 @@ h1 {
 
 .join-area-p-tag {
     text-align: center;
+    font-size: 0.8rem;
     color: rgba(68, 81, 100, 1);
 }
 
@@ -254,81 +291,55 @@ h1 {
 
 .clanbooker-p {
     text-align: center;
-}
-
-.whatsapp-color {
-    color: rgba(46, 184, 65, 1);
-}
-
-.instagram-color {
-    color: rgba(66, 103, 201, 1);
-}
-
-.messenger-color {
-    color: rgba(15, 143, 255, 1);
-}
-
-.snapchat-color {
-    color: rgba(27, 37, 51, 1);
-}
-
-.viber-color {
-    color: rgba(123, 81, 156, 1);
-}
-
-.telegram-color {
-    color: rgba(31, 150, 212, 1);
-}
-
-.wclam-color {
-    color: rgba(0, 200, 14, 1);
-}
-
-.Kakaotalk-color {
-    color: rgba(0, 0, 0, 1);
-}
-
-.line-color {
-    color: rgba(6, 199, 85, 1);
-}
-
-.sms-color {
-    color: rgba(27, 37, 51, 1);
+    color: rgba(68, 81, 100, 1);
 }
 
 .media-card img {
-    width: 54px;
-    height: 54px;
-    margin-bottom: 10px;
+    width: 4.6875rem;
+    height: 5rem;
 }
 
 .media-card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.625rem;
+    padding: 0.9375rem;
     background-color: rgba(249, 250, 252, 1);
+    display: flex;
+    justify-content: center;
 }
 
 .social-media {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+    gap: 1.25rem;
     margin: 0 auto;
-    max-width: 980px;
+    max-width: 63.625rem;
 }
 
 /* social media area END*/
 
 /* Our Clan Booker offer area START */
-small {
+p {
     color: rgba(68, 81, 100, 1);
+}
+
+.price-left25{
+    padding-left: 7.1rem;
+}
+
+.price-left50{
+    padding-left: 4rem;
 }
 
 .our-clan {
     text-align: center;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.1875rem;
+}
+
+.sercel-btn {
+    width: 0.75rem;
+    height: 0.75rem;
 }
 
 .booker-offer {
@@ -337,25 +348,11 @@ small {
 
 .our-clan-p-tag {
     text-align: center;
-}
-
-.wright-symbol {
-    color: rgba(241, 101, 76, 1);
+    color: rgba(68, 81, 100, 1);
 }
 
 .gift-card-color {
     color: #e4492d;
-}
-
-.price-left-50 {
-    padding-left: 30px;
-}
-
-.sercial-wright-symbol {
-    background-color: white;
-    color: #e4492d;
-    padding: 2px;
-    border-radius: 3rem;
 }
 
 .ebook {
@@ -366,45 +363,45 @@ small {
     color: #e4492d;
 }
 
-
 .price-text-small {
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: normal;
     color: rgba(27, 37, 51, 1);
 }
 
 .price-left {
-    padding-left: 100px;
+    padding-left: 6.25rem;
 }
 
 .our-main-bg {
     background-color: rgba(245, 246, 247, 1);
-    padding-top: 50px;
-    padding-bottom: 25px;
+    padding-top: 3.125rem;
+    padding-bottom: 1.5625rem;
 }
 
 .our-clan-main {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     margin: 0 auto;
-    max-width: 1020px;
-    padding: 30px;
+    max-width: 66.7rem;
+    padding: 1.875rem;
 }
 
 .our-clan-card1 {
     background-color: rgba(255, 255, 255, 1);
-    width: 450px;
-    height: 420px;
-    top: 3323px;
-    left: 300px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    padding: 45px;
-    line-height: 35px;
+    width: 28.25rem;
+    height: 26.2rem;
+    top: 207.6875rem;
+    left: 18.75rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid #ddd;
+    padding: 2.8125rem;
+    line-height: 2.1875rem;
 }
 
 .our-clan-card1 ul li {
     list-style: none;
+    color: rgba(68, 81, 100, 1);
 }
 
 .our-clan-card2 {
@@ -415,18 +412,18 @@ small {
 
 .our-clan-parent {
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: flex;
-    padding: 28px;
-    gap: 40px;
+    padding: 1.75rem;
+    gap: 2.5rem;
     align-items: center;
-    border: 1px solid #ddd;
+    border: 0.0625rem solid #ddd;
 }
 
 .our-clan-parent img.card-image {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 10px;
+    width: 3.4375rem;
+    height: 3.4375rem;
+    margin-bottom: 0.625rem;
 }
 
 .our-clan-parent h4 {
@@ -436,7 +433,7 @@ small {
 
 .our-clan-parent p {
     color: #666;
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 .price {
@@ -455,52 +452,44 @@ small {
     font-size: 2rem;
 }
 
-.comunity-say-color {
-    color: #e4492d;
-}
-
-.comunity-say-color-footballer {
-    color: yellowgreen;
-}
-
-.comunity-say-color-footballer2 {
-    color: hotpink;
-}
-
 .comunity-say-color1 {
     color: rgba(68, 81, 100, 1);
 }
 
 .review-flex {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     text-align: center;
 }
 
 .review-text-top {
-    padding-top: 8px;
+    padding-top: 0.5rem;
 }
 
 .next-previous {
     margin: 0 auto;
-    max-width: 965px;
-    gap: 40px;
+    max-width: 63rem;
+    gap: 2rem;
     display: flex;
 }
 
 .next-previous-card {
     background-color: rgba(245, 246, 247, 1);
-    width: 320px;
-    height: 310px;
-    border-radius: 16px;
-    padding: 22px;
+    width: 20rem;
+    height: 19.375rem;
+    border-radius: 1rem;
+    padding: 1.375rem;
 }
 
 .man-profile-img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     background-color: #F1654C;
     border-radius: 2rem;
+}
+
+.review-content {
+    line-height: 1.375rem;
 }
 
 .button-center {
@@ -511,9 +500,6 @@ small {
     text-align: center;
 }
 
-.review-content {
-    line-height: 22px;
-}
 
 /* Let’s read ClanBookers area END */
 
@@ -526,7 +512,7 @@ small {
 
 .footer-bg-color {
     background-color: rgba(245, 246, 247, 1);
-    padding-top: 50px;
+    padding-top: 3rem;
 }
 
 .clan-footer-color {
@@ -537,48 +523,15 @@ small {
     color: #e4492d;
 }
 
-.footer-message-i-tag {
-    background-color: rgba(234, 236, 240, 1);
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.footer-message-i-tag i {
-    color: #e4492d;
-}
-
 .footer-subscribe-color {
     color: rgba(255, 255, 255, 1);
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .footer-small-subscribe {
     color: rgba(234, 236, 240, 1);
-}
-
-.input-tag-left {
-    padding-left: 160px;
-}
-
-.footer-input-card {
-    padding: 11px;
-    background-color: rgba(234, 236, 240, 1);
-    border-radius: 10px;
-}
-
-.footer-input-tag {
-    border: none;
-    outline: none;
-    background-color: rgba(234, 236, 240, 1);
-    padding: 14px;
-}
-
-.footer-text {
-    background-color: #e4492d;
-    color: white;
-    padding: 20px 30px;
-    text-align: center;
+    font-size: 0.7rem;
 }
 
 .footer-text-color {
@@ -591,58 +544,25 @@ small {
 
 .subscribe {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     background-color: #F1654C;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 2rem;
+    border-radius: 0.5rem;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 63rem;
     align-items: center;
-}
-
-.list-row-items {
-    display: flex;
-    gap: 50px;
-    margin: 0 auto;
-    max-width: 940px;
-    line-height: 27px;
 }
 
 .list-row-items li {
     list-style: none;
 }
 
-.social-media-icon {
-    display: flex;
-    gap: 20px;
-    padding-top: 10px;
-}
-
-.social-media-icon-card {
-    background-color: rgba(234, 236, 240, 1);
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
 .social-media-icon-card i {
     color: #F1654C;
 }
 
-
-.social-media-icon-card-twitter {
-    background-color: #F1654C;
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-
 .social-media-icon-card-twitter i {
     color: rgba(234, 236, 240, 1);
-}
-
-.my-name-color {
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    font-size: 15px;
 }
 
 .footer-li li {
@@ -653,4 +573,59 @@ small {
     color: rgba(27, 37, 51, 1);
 }
 
+.input-tag-left {
+    padding-left: 14rem;
+}
+
+.footer-input-card {
+    padding: 0.6875rem;
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 0.625rem;
+}
+
+.footer-input-tag {
+    border: none;
+    outline: none;
+    background-color: rgba(234, 236, 240, 1);
+    padding: 0.875rem;
+}
+
+.footer-text {
+    background-color: #e4492d;
+    color: white;
+    padding: 1.25rem 1.875rem;
+    text-align: center;
+}
+
+.list-row-items {
+    display: flex;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 62rem;
+    line-height: 2rem;
+}
+
+.social-media-icon {
+    display: flex;
+    gap: 1.25rem;
+    padding-top: 0.625rem;
+}
+
+.social-media-icon-card {
+    background-color: rgba(234, 236, 240, 1);
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 0.625rem;
+}
+
+.social-media-icon-card-twitter {
+    background-color: #F1654C;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 0.625rem;
+}
+
+.my-name-color {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 0.9375rem;
+}
 /* footer area END */
