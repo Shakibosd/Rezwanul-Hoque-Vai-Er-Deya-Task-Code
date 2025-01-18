@@ -12,6 +12,7 @@ body {
 }
 
 /* navbar area START */
+
 .navbar {
     padding: 1rem 2rem;
     background-color: #FFFFFF;
@@ -82,7 +83,6 @@ body {
 .nav-items {
     color: #445164;
 }
-
 /* navbar area END */
 
 
