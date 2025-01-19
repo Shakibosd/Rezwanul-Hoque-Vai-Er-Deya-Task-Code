@@ -62,14 +62,15 @@ html {
 .loginBtn {
     padding: 0.8rem 1.1rem;
     border: none;
-    background-color: #f1654c;
+    background-color: rgba(241, 101, 76, 1);
     color: #fff;
     border-radius: 0.4rem;
     cursor: pointer;
 }
 
 .loginBtn:hover {
-    background-color: #f72500e4;
+    background-color: mediumaquamarine;
+    color: black;
 }
 
 .logo span {
@@ -78,7 +79,7 @@ html {
 }
 
 .navLogoColor {
-    color: #f1654c;
+    color: rgba(241, 101, 76, 1);
 }
 
 .navLogoColor1 {
@@ -162,8 +163,16 @@ html {
 
 .cta-button {
     padding: 1rem 2rem;
-    background-color: #f1654c;
+    background-color: rgba(241, 101, 76, 1);
     color: white;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.cta-button:hover {
+    padding: 1rem 2rem;
+    background-color: mediumaquamarine;
+    color: black;
     border-radius: 0.5rem;
     border: none;
 }
@@ -171,6 +180,22 @@ html {
 .cta-button1 {
     padding: 1rem 2rem;
     background-color: rgba(234, 236, 240, 1);
+    border: 0.02rem solid #ddd;
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.cta-button1:hover {
+    padding: 1rem 2rem;
+    background-color: mediumaquamarine;
+    border: 0.02rem solid #ddd;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.cta-button2:hover {
+    padding: 1rem 2rem;
+    background-color: mediumaquamarine;
     border: 0.02rem solid #ddd;
     color: black;
     border-radius: 0.5rem;
@@ -228,7 +253,7 @@ html {
 }
 
 .ClanBookTitle1 {
-    color: #f1654c;
+    color: rgba(241, 101, 76, 1);
 }
 
 .ClanBookTitle {
@@ -268,7 +293,7 @@ h1 {
 }
 
 .bg-area {
-    background-color: #f1654c !important;
+    background-color: rgba(241, 101, 76, 1) !important;
     padding: 4rem;
     position: relative;
     z-index: 1;
@@ -367,7 +392,7 @@ p {
 }
 
 .booker-offer {
-    color: #e4492d;
+    color: rgba(241, 101, 76, 1);
 }
 
 .our-clan-p-tag {
@@ -376,15 +401,15 @@ p {
 }
 
 .gift-card-color {
-    color: #e4492d;
+    color: rgba(241, 101, 76, 1);
 }
 
 .ebook {
-    color: #e4492d;
+    color: rgba(241, 101, 76, 1);
 }
 
 .clanbook {
-    color: #e4492d;
+    color: rgba(241, 101, 76, 1);
 }
 
 .price-text-small {
@@ -471,7 +496,7 @@ p {
 /* Let’s read ClanBookers area strat */
 .cta-button2 {
     padding: 1rem 2rem;
-    background-color: #F1654C;
+    background-color: rgba(241, 101, 76, 1);
     border: 0.02rem solid #ddd;
     color: #fff;
     border-radius: 0.5rem;
@@ -485,6 +510,10 @@ p {
 
 .comunity-say-color1 {
     color: rgba(68, 81, 100, 1);
+}
+
+.comunity-say-color {
+    color: rgba(241, 101, 76, 1);
 }
 
 .review-flex {
@@ -515,7 +544,7 @@ p {
 .man-profile-img {
     width: 3.75rem;
     height: 3.75rem;
-    background-color: #f1654c;
+    background-color: rgba(241, 101, 76, 1);
     border-radius: 2rem;
 }
 
@@ -525,14 +554,6 @@ p {
 
 .button-center {
     text-align: center;
-}
-
-.cta-button {
-    padding: 1rem 2.1rem;
-}
-
-.cta-button1 {
-    padding: 1rem 1rem;
 }
 
 .lets-p {
@@ -554,11 +575,11 @@ p {
 }
 
 .clan-footer-color {
-    color: #e4492d;
+    color: rgba(241, 101, 76, 1);
 }
 
 .oo-footer-color {
-    color: #e4492d;
+    color: rgba(241, 101, 76, 1);
 }
 
 .footer-subscribe-color {
@@ -583,7 +604,7 @@ p {
 .subscribe {
     display: flex;
     gap: 1rem;
-    background-color: #f1654c;
+    background-color: rgba(241, 101, 76, 1);
     padding: 2rem;
     border-radius: 0.5rem;
     margin: 0 auto;
@@ -601,7 +622,15 @@ p {
 }
 
 .social-media-icon-card i {
-    color: #f1654c;
+    color: rgba(241, 101, 76, 1);
+}
+
+.social-media-icon-card:hover {
+    background-color: pink;
+}
+
+.social-media-icon-card-twitter:hover {
+    background-color: pink;
 }
 
 .social-media-icon-card-twitter i {
@@ -634,7 +663,7 @@ p {
 }
 
 .footer-text {
-    background-color: #e4492d;
+    background-color: rgba(241, 101, 76, 1);
     color: white;
     padding: 1.25rem 1.875rem;
     text-align: center;
@@ -661,7 +690,7 @@ p {
 }
 
 .social-media-icon-card-twitter {
-    background-color: #f1654c;
+    background-color: rgba(241, 101, 76, 1);
     border-radius: 0.3125rem;
     padding: 0.3125rem 0.625rem;
 }

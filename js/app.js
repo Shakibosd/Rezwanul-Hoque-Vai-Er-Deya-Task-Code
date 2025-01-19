@@ -1,6 +1,5 @@
 //reviews card next previous
 console.log("Javascrit File Testing");
-alert("Welcome ClanBook Platfrom!");
 const reviewsCardNextPrevious = () => {
     const reviewCards = document.querySelectorAll(".next-previous-card");
     const nextButton = document.getElementById("next-button");

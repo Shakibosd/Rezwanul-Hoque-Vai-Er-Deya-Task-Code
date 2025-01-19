@@ -145,7 +145,7 @@
 
     .cta-button {
         padding: 1rem 2rem;
-        background-color: #f1654c;
+        background-color: rgba(241, 101, 76, 1);
         color: white;
         border-radius: 0.5rem;
         border: none;
@@ -191,7 +191,7 @@
     }
 
     .bg-area {
-        background-color: #f1654c !important;
+        background-color: rgba(241, 101, 76, 1) !important;
         padding: 7rem;
         position: relative;
         z-index: 1;
@@ -303,7 +303,7 @@
     .man-profile-img {
         width: 4.75rem;
         height: 4.75rem;
-        background-color: #f1654c;
+        background-color: rgba(241, 101, 76, 1);
         border-radius: 3rem;
     }
 }

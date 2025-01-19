@@ -108,7 +108,7 @@
         font-size: 1rem;
         margin: 1rem auto 0;
         display: inline-block;
-        background-color: #F1654C;
+        background-color: rgba(241, 101, 76, 1);
         color: #fff;
         border-radius: 0.5rem;
         border: none;
@@ -206,7 +206,7 @@
         font-size: 1rem;
         margin: 1rem auto 0;
         display: inline-block;
-        background-color: #F1654C;
+        background-color: rgba(241, 101, 76, 1);
         color: #fff;
         border-radius: 0.5rem;
         border: none;
@@ -548,7 +548,7 @@
 
     .cta-button2 {
         padding: 1rem 2rem;
-        background-color: #F1654C;
+        background-color: rgba(241, 101, 76, 1);
         border: 0.02rem solid #ddd;
         color: #fff;
         border-radius: 0.5rem;
@@ -650,7 +650,7 @@
     }
 
     .social-media-icon-card-twitter {
-        background-color: #f1654c;
+        background-color: rgba(241, 101, 76, 1);
     }
 }
 
