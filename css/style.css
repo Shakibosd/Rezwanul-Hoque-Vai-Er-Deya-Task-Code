@@ -8,7 +8,7 @@
 /* Fonts */
 body {
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 html {
@@ -54,9 +54,9 @@ html {
 }
 
 .profilePic img {
-    width: 2.3rem;
-    height: 2.3rem;
-    border-radius: 10rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 5rem;
 }
 
 .loginBtn {
@@ -102,6 +102,21 @@ html {
     position: relative;
     z-index: 1;
     background-color: #f5f6f7 !important;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    padding-right: 34.5rem;
+    bottom: 4rem;
+    width: 21rem;
+    height: 28rem;
+    background-image: url("..//images/Rectangle 1051.png");
+    background-size: 18rem;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -1;
+    opacity: 1;
 }
 
 .hero-section::before {
@@ -576,7 +591,7 @@ p {
     align-items: center;
 }
 
-.subscribe img{
+.subscribe img {
     display: block;
     margin: auto;
 }

@@ -1,5 +1,20 @@
 /* navbar area START */
 @media (max-width: 48rem) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        overflow-x: auto;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
     .navbar {
         flex-direction: column;
         gap: 2rem;
@@ -38,8 +53,8 @@
     }
 
     .profilePic img {
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 3rem;
+        height: 3rem;
     }
 }
 
@@ -55,6 +70,22 @@
         text-align: center;
         padding-bottom: 7rem;
     }
+
+    .hero-section::after {
+        content: "";
+        position: absolute;
+        right: 5rem;
+        bottom: 2rem;
+        width: 23rem;
+        height: 19rem;
+        background-image: url("..//images/Rectangle 1051.png");
+        background-size: 11rem;
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: -1;
+        opacity: 1;
+    }
+
 
     .hero-text {
         font-size: 1.8rem;
@@ -102,7 +133,7 @@
         padding-left: 15rem;
         background-image: url('..//images/Group.png');
         background-repeat: no-repeat;
-        background-size: 5rem;
+        background-size: 6.4rem;
         background-position: center;
     }
 
@@ -118,6 +149,22 @@
         font-size: 1.5rem;
         line-height: 2rem;
     }
+
+    .hero-section::after {
+        content: "";
+        position: absolute;
+        right: 3.2rem;
+        bottom: 2.5rem;
+        width: 20rem;
+        height: 15rem;
+        background-image: url("..//images/Rectangle 1051.png");
+        background-size: 8rem;
+        background-repeat: no-repeat;
+        background-position: right;
+        z-index: -1;
+        opacity: 1;
+    }
+
 
     .hero-content {
         font-size: 0.8rem;
@@ -168,26 +215,24 @@
     .image-container {
         display: flex;
         flex-direction: column;
-        padding-left: 11rem;
+        padding-left: 10rem;
         align-items: center;
         gap: 0.5rem;
     }
 
     .main-image img {
-        width: 8rem;
+        width: 9rem;
         height: auto;
         border-radius: 0.5rem;
     }
 
     .overlay-image {
-        margin-top: -1rem;
         padding-left: 17rem;
         background-image: url('..//images/Group.png');
         background-repeat: no-repeat;
-        background-size: 4rem;
+        background-size: 4.3rem;
         background-position: center;
     }
-
 
     .overlay-image img {
         width: 6rem;
@@ -276,11 +321,11 @@
 
     .bg-card-area {
         padding: 2rem;
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .bg-cart-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.6rem;
         text-align: center;
         padding: 0 1rem;
@@ -375,7 +420,7 @@
 
     .our-clan-card1 {
         width: 100%;
-        padding: 1.5rem;
+        padding: 0.2rem;
         height: auto;
     }
 
@@ -513,8 +558,7 @@
 /* Let’s read ClanBookers area END */
 
 /* footer area START */
-/* Mobile View */
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .footer-bg-color {
         padding-top: 2rem;
     }
