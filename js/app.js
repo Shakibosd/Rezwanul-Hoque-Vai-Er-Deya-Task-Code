@@ -1,4 +1,6 @@
 //reviews card next previous
+console.log("Javascrit File Testing");
+alert("Welcome ClanBook Platfrom!");
 const reviewsCardNextPrevious = () => {
     const reviewCards = document.querySelectorAll(".next-previous-card");
     const nextButton = document.getElementById("next-button");
@@ -11,8 +13,7 @@ const reviewsCardNextPrevious = () => {
         reviewCards.forEach((card, index) => {
             if (index >= currentStart && index < currentStart + cardsPerPage) {
                 card.style.display = "block";
-            }
-            else {
+            } else {
                 card.style.display = "none";
             }
         });
