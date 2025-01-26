@@ -1,337 +1,536 @@
 /* navbar area START */
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    * {
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbar-area {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .nav-left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .nav-left h1 {
+        font-size: 1.8rem;
+    }
+
+    .nav-middle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
         padding: 0;
-        margin: 0;
-        box-sizing: border-box;
     }
 
-    body {
-        font-family: Arial, sans-serif;
-        overflow-x: auto;
+    .nav-items li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0.5rem;
     }
 
-    html {
-        scroll-behavior: smooth;
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
 
-    .navbar {
-        padding: 1rem;
-        flex-direction: row;
+    .login-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
     }
 
-    .navItems {
-        gap: 0.8rem;
-        flex-direction: row;
-    }
-
-    .navItems li {
-        font-size: 0.8rem;
-    }
-
-    .navAction {
-        flex-direction: row;
-    }
-
-    .loginBtn {
-        padding: 0.6rem 0.9rem;
-        font-size: 0.85rem;
-    }
-
-    .profilePic img {
-        width: 2.4rem;
-        height: 2.4rem;
-    }
-
-    .logo span {
-        font-size: 1.5rem;
+    .avatar-img {
+        width: 3.2rem;
+        height: 3.2rem;
     }
 }
 
 /* navbar area END */
 
 /* hero section area START*/
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-
-    .image-container {
-        display: flex;
+@media (min-width: 768px) and (max-width: 992px) {
+    .hero-content {
         flex-direction: column;
-        padding-left: 20rem;
         align-items: center;
-        gap: 0.5rem;
+        justify-content: center;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
     }
 
-    .hero-text {
-        font-size: 1.5rem;
+    .hero-left {
+        padding-top: 1.5rem;
+    }
+
+    .hero-left h1 {
+        font-size: 2rem;
         line-height: 2.5rem;
     }
 
-    .overlay-image {
-        padding-left: 22rem;
-        background-image: url('..//images/Group.png');
-        background-repeat: no-repeat;
-        background-size: 9.8rem;
-        background-position: center;
+    .hero-left p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
-    .main-image img {
-        width: 17rem;
-        height: 22rem;
+    .hero-left button {
+        font-size: 0.875rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .hero-right {
+        margin-top: 3rem;
+        position: relative;
+        width: 100%;
+    }
+
+    .bg-color-bg-img {
+        position: relative;
+        z-index: 1;
+        padding-bottom: 3rem;
+    }
+
+    .bg-color-bg-img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/bg-img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.1;
+        z-index: -1;
+        filter: brightness(40%);
+    }
+
+    .hero-main-image {
+        position: relative;
+    }
+
+    .hero-main-image img {
+        width: 80%;
+        padding-left: 40%;
+        height: 80%;
         border-radius: 0.4rem;
     }
 
-    .overlay-image img {
-        width: 12rem;
-        height: 14rem;
+    .hero-overlay-image {
+        position: absolute;
+        left: 27%;
+        bottom: -4rem;
+        transform: translateX(-30%);
+        background-image: url("..//images/Group.png");
+        background-size: 8.5rem;
+    }
+
+    .hero-overlay-image img {
+        width: 80%;
+        height: 80%;
         border-radius: 0.5rem;
     }
 
-    .hero-section::after {
+    .bg-color-bg-img::after {
         content: "";
         position: absolute;
-        padding-right: 11.875rem;
-        bottom: 4rem;
-        width: 21rem;
-        height: 28rem;
+        bottom: 5.5rem;
+        left: 24%;
+        width: 40%;
+        height: 40%;
         background-image: url("..//images/Rectangle 1051.png");
-        background-size: 18rem;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
         z-index: -1;
         opacity: 1;
+        filter: brightness(93%);
     }
 }
 
 /* hero section area END*/
 
 /* section ClanBook area START*/
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    .hero-section {
-        padding-top: 3rem;
+@media (min-width: 768px) and (max-width: 992px) {
+    .clanbook-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        overflow: unset;
+        margin-top: 6rem;
+    }
+
+    .clanBook-left,
+    .photo-frame {
         display: flex;
         justify-content: center;
-        align-items: center;
-        padding-bottom: 8rem;
-        position: relative;
-        z-index: 1;
-        background-color: #f5f6f7 !important;
-    }
-
-    .image-container {
         position: relative;
     }
 
-    .main-image img {
-        width: 18rem;
-        height: 25rem;
-        display: block;
+    .frame img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .frame1 {
+        position: absolute;
+        bottom: 70%;
+        left: auto;
+        right: auto;
+        padding: 0;
+    }
+
+    .frame1 img {
+        width: 50%;
+        height: 50%;
         border-radius: 0.4rem;
     }
 
-    .overlay-image {
-        position: absolute;
-        bottom: -4.6875rem;
-        left: -10rem;
-        background-repeat: no-repeat;
-        padding-top: 10rem;
-        background-image: url("..//images/Group.png");
+    .clanBook-right {
+        width: 100%;
+        padding: 0 1rem;
+        text-align: center;
     }
 
-    .overlay-image img {
-        width: 12.5rem;
-        height: 15.625rem;
-        border-radius: 0.5rem;
+    .clanBook-right p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 100%;
     }
 
-    .cta-button {
-        padding: 1rem 2rem;
-        background-color: rgba(241, 101, 76, 1);
-        color: white;
-        border-radius: 0.5rem;
-        border: none;
+    .clanBook-right button {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        width: 78%;
+        text-align: center;
     }
 
-    .cta-button1 {
-        padding: 1rem 2rem;
-        background-color: rgba(234, 236, 240, 1);
-        border: 0.02rem solid #ddd;
-        color: black;
-        border-radius: 0.5rem;
-    }
-
-    .hero-text {
-        font-weight: bold;
-        line-height: 3.3rem;
+    .what-does-clanbook {
         font-size: 2rem;
     }
 
-    .hero-content {
-        color: #445164;
-        font-size: 0.84rem;
-        line-height: 1.5rem;
+    .what-does-clanbook-p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        padding: 0 1rem;
+    }
+
+    .ClanBookTitle {
+        font-size: 1.5rem;
+        padding: 0 1rem;
     }
 }
 
 /* section ClanBook area END*/
 
 /* join area START*/
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    .bg-cart-title {
-        font-weight: bold;
-        font-size: 1.2rem;
-        text-align: center;
+@media (min-width: 768px) and (max-width: 992px) {
+    .bg-area {
+        padding: 2rem;
     }
 
     .bg-card-area {
-        background-color: rgba(255, 255, 255, 1);
-        padding: 2.125rem;
-        margin: 0 auto;
-        max-width: 63.875rem;
-        border-radius: 0.625rem;
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
     }
 
-    .bg-area {
-        background-color: rgba(241, 101, 76, 1) !important;
-        padding: 7rem;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
+    .bg-cart-title {
+        font-size: 1.5rem;
     }
 
     .join-area-p-tag {
-        text-align: center;
         font-size: 0.8rem;
-        color: rgba(68, 81, 100, 1);
+        line-height: 1.3rem;
+        text-align: center;
+        padding: 0 1rem;
     }
 
     .cta-button-center {
         text-align: center;
+    }
+
+    .cta-button-center button {
+        padding: 0.8rem 1rem;
+        font-size: 0.875rem;
+        border-radius: 0.4rem;
+        width: 90%;
     }
 }
 
 /* join area END */
 
 /* social media area START*/
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    .social-media {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-        gap: 1.25rem;
-        margin: 0 auto;
-        max-width: 36.625rem;
+@media (min-width: 768px) and (max-width: 992px) {
+    .clanbooker-color {
+        font-size: 1.5rem;
+        padding: 0 1rem;
     }
 
-
     .clanbooker-p {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
         text-align: center;
-        color: rgba(68, 81, 100, 1);
-        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .media-card img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .social-media {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: unset;
+        gap: 1rem;
+    }
+
+    .media-card {
+        width: 45%;
+        height: auto;
+        align-items: center;
+        padding: 0.5rem;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 /* social media area END*/
 
 /* Our Clan Booker offer area START */
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    .our-clan-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+@media (min-width: 768px) and (max-width: 992px) {
+    .clan-book-offer-bg {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
     }
 
-    .our-clan-card1 {
-        background-color: rgba(255, 255, 255, 1);
-        width: 34.25rem;
-        height: 23.2rem;
-        border-radius: 0.625rem;
-        border: 0.0625rem solid #ddd;
-        padding: 2.1rem;
-        line-height: 2.1875rem;
+    .clan-book-offer-color {
+        font-size: 1.5rem;
     }
 
-    .our-clan-card2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .clan-book-offer-color-p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .clan-book-offer-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    .our-clan-parent {
-        background-color: rgba(255, 255, 255, 1);
-        border-radius: 0.5rem;
-        padding: 1.75rem;
-        flex-direction: row;
-        gap: 8rem;
-        width: 34rem;
-        border: 0.0625rem solid #ddd;
+    .clan-book-offer-left {
+        width: 90%;
+        height: auto;
+        padding: 5% 5%;
     }
 
-    .our-clan-parent img.card-image {
-        width: 3.5rem;
-        height: 3.5rem;
-        margin-bottom: 0.9rem;
-    }
-
-    .our-clan-parent h4 {
-        margin: 0;
+    .clan-book-offer-left p {
+        line-height: 2rem;
         font-size: 1rem;
     }
 
-    .our-clan-parent p {
-        color: #666;
-        margin: 0.625rem 0;
+    .clan-book-offer-left button {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .containers-offers {
+        width: 100%;
+    }
+
+    .clan-book-offer-right h2,
+    small {
+        text-align: center;
+    }
+
+    .clan-book-offer-right {
+        width: 94%;
+        border-radius: 0.5rem;
+        height: 16rem;
+        gap: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offer-img1,
+    .offer-img2,
+    .offer-img3 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .color-h2-offer,
+    .color-h2-offer-ebook {
+        font-size: 1rem;
+    }
+
+    #cnter {
+        padding-left: 15%;
+    }
+
+    .price-format-pdf,
+    .price {
         font-size: 0.8rem;
+    }
+
+    .prices {
+        font-size: 0.75rem;
     }
 }
 
 /* Our Clan Booker offer area END */
 
 /* Let’s read ClanBookers area strat */
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    .comunity-say-color1 {
-        color: rgba(68, 81, 100, 1);
+@media (min-width: 768px) and (max-width: 992px) {
+    .lets-read {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    .lets-p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        line-height: 1.5rem;
+    }
+
+    .next-previous {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
     }
 
     .next-previous-card {
-        background-color: rgba(245, 246, 247, 1);
-        width: 34rem;
-        height: 19.375rem;
-        border-radius: 1rem;
-        padding: 1.375rem;
+        width: 90%;
+        height: auto;
+        padding: 1rem;
     }
 
     .man-profile-img {
-        width: 4.75rem;
-        height: 4.75rem;
-        background-color: rgba(241, 101, 76, 1);
-        border-radius: 3rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .review-flex {
+        display: flex;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .review-text-top h5 {
+        font-size: 1rem;
+    }
+
+    .review-text-top small {
+        font-size: 0.85rem;
+    }
+
+    .review-content {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .button-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 }
 
 /* Let’s read ClanBookers area END */
 
 /* footer area START */
-@media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
-    .footer-bg-color {
-        text-align: center;
-    }
-
+@media (min-width: 768px) and (max-width: 992px) {
     .subscribe {
-        display: flex;
+        width: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
     }
 
-    .subscribe div {
-        margin-bottom: 0.5rem;
+    .footer-sms-icon {
+        flex-direction: column;
+        display: block;
+        margin: auto;
+        gap: 0.5rem;
     }
 
     .footer-input-card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
         gap: 0.5rem;
+        width: 100%;
+    }
+
+    .footer-input-tag {
+        width: 100%;
+    }
+
+    .footer-subscribe-color {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        font-weight: bold;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 0.75rem;
+        text-align: center;
+    }
+
+    .list-row-items {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .list-row-items,
+    small {
+        text-align: center;
+    }
+
+    .footer-clan-book {
+        text-align: center;
+    }
+
+    .social-media-icon {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-bg-color {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer-text {
+        padding: 1rem;
+        text-align: center;
     }
 }
 

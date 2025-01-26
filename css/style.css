@@ -37,7 +37,6 @@ h1 {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-items: center;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
@@ -52,8 +51,7 @@ h1 {
 
 .nav-left h1 {
     font-weight: bold;
-    font-size: 2.375rem;
-    line-height: 2.375rem;
+    font-size: 2.1rem;
 }
 
 .nav-items li {
@@ -76,6 +74,7 @@ h1 {
 .nav-right {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 0.5rem;
 }
@@ -90,9 +89,8 @@ h1 {
 
 .login-btn {
     border: none;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     gap: 0.6rem;
     background-color: rgba(241, 101, 76, 1);
@@ -127,12 +125,12 @@ h1 {
 .hero-content {
     padding-top: 3.5rem;
     padding-bottom: 8.9rem;
-    gap: 15.5rem;
     display: flex;
     align-items: center;
     justify-items: center;
     width: 100%;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .hero-left {
@@ -147,21 +145,21 @@ h1 {
     display: block;
 }
 
-/* .bg-color-bg-img::after {
+.bg-color-bg-img::after {
     content: "";
     position: absolute;
     bottom: 7.2rem;
-    left: 23.5%;
-    width: 55vw;
-    height: 55vh;
+    left: 50%;
+    width: 37.5rem;
+    height: 25rem;
     background-image: url("..//images/Rectangle 1051.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     z-index: -1;
     opacity: 1;
     filter: brightness(93%);
-} */
+}
 
 .bg-color-bg-img::before {
     content: "";
@@ -247,6 +245,7 @@ h1 {
     justify-items: center;
     gap: 8.8rem;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .clanBook-left {
@@ -373,7 +372,6 @@ h1 {
     font-weight: 31.25rem;
 }
 
-
 /* join area END */
 
 /* social media area START*/
@@ -412,6 +410,7 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2.2rem;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 /* social media area END*/
@@ -427,8 +426,7 @@ h1 {
 .clan-book-offer-content {
     display: flex;
     align-items: center;
-    justify-items: center;
-    gap: 1rem;
+    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -439,7 +437,7 @@ h1 {
     border: 0.0625rem solid rgba(234, 236, 240, 1);
     background-color: rgba(255, 255, 255, 1);
     padding-top: 1.6rem;
-    padding-left: 3.5rem;
+    padding-left: 2.5rem;
 }
 
 .clan-book-offer-left p {
@@ -583,8 +581,8 @@ h2 {
 }
 
 .next-previous {
-    gap: 1.8rem;
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -683,6 +681,12 @@ h2 {
     color: rgba(255, 255, 255, 1);
 }
 
+.footer-text-color a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .subscribe {
     display: flex;
     justify-content: space-between;
@@ -729,7 +733,7 @@ h2 {
     font-weight: 500;
 }
 
-.footer-sms-icon{
+.footer-sms-icon {
     display: flex;
     gap: 1rem;
     align-items: center;
