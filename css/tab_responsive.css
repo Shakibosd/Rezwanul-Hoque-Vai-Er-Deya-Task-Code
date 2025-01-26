@@ -471,14 +471,12 @@
     .subscribe {
         width: 100%;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1rem;
     }
 
     .footer-sms-icon {
         flex-direction: column;
-        display: block;
-        margin: auto;
         gap: 0.5rem;
     }
 

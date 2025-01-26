@@ -442,7 +442,7 @@
 /* footer area START */
 @media screen and (max-width: 576px) {
     .subscribe {
-        width: 100%; 
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;

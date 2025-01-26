@@ -16,19 +16,15 @@ html {
 }
 
 /* text first work capital */
-p {
-    text-transform: capitalize;
-}
-
-h1 {
+p, h1, small {
     text-transform: capitalize;
 }
 
 /* navbar area START */
 .container {
     width: 100%;
-    max-width: 72.5rem;
-    margin: auto;
+    max-width: 1144px;
+    margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -149,7 +145,7 @@ h1 {
     content: "";
     position: absolute;
     bottom: 7.2rem;
-    left: 50%;
+    left: 49.2%;
     width: 37.5rem;
     height: 25rem;
     background-image: url("..//images/Rectangle 1051.png");
@@ -589,7 +585,7 @@ h2 {
 .next-previous-card {
     background-color: rgba(245, 246, 247, 1);
     width: 22.1875rem;
-    height: 20.375rem;
+    height: auto;
     border-radius: 1rem;
     padding: 1.375rem;
 }

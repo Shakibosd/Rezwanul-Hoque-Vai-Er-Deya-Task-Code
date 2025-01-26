@@ -1,5 +1,5 @@
 //reviews card next previous
-console.log("Javascrit File Testing");
+console.log("Javascrit File Testing!");
 const reviewsCardNextPrevious = () => {
     const reviewCards = document.querySelectorAll(".next-previous-card");
     const nextButton = document.getElementById("next-button");
