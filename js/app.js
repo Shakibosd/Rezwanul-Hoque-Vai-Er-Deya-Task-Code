@@ -34,3 +34,9 @@ const reviewsCardNextPrevious = () => {
     updateReviewCards();
 };
 reviewsCardNextPrevious();
+
+//footer daynamic
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+const footerText = document.getElementById("footer-text-year");
+footerText.innerHTML = `Copyright &copy; ${currentYear} ClanBook | All Rights Reserved | Design & Developed By <a href="https://myprotfolios.netlify.app/" target="_blank">Nazmus Shakib</a> `;
