@@ -455,7 +455,7 @@ p, h1, small {
 .clan-book-offer-color {
     text-align: center;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .clan-book-offer-color1 {
@@ -550,7 +550,7 @@ h2 {
 /* Let’s read ClanBookers area strat */
 .lets-read {
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 2.5rem;
 }
 
@@ -585,7 +585,7 @@ h2 {
 .next-previous-card {
     background-color: rgba(245, 246, 247, 1);
     width: 22.1875rem;
-    height: auto;
+    height: 20rem;
     border-radius: 1rem;
     padding: 1.375rem;
 }
